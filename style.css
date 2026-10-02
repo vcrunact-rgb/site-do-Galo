@@ -1,0 +1,134 @@
+.escudo {
+    width: 120px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 42px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid white;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+h2 {    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 32px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid white;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;}
+
+p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 460px;
+    margin: 0 auto;
+}
+
+.botoes a {
+    width: 210px;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    transition: 0.3s
+}
+
+.botoes a:hover {
+    background-color:beige;
+    color: black;
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+.jogador-esquerda {
+    position: absolute;
+    width: 300px;
+    left: 50px;
+    top: 280px;
+}
+
+
+.jogador-direita {
+    position: absolute;
+    width: 300px;
+    right: 50px;
+    top: 280px;
+}
+
+@media (max-width: 900px) {
+
+    .jogador-esquerda,
+    .jogador-direita {
+        display: none;
+    }
+
+        h1 {
+        font-size: 32px;
+    }
+
+    .botoes {
+        width: 100%;
+    }
+
+    .botoes a {
+        width: 150px;
+        height: 150px;
+    }
+
+}
+body {
+    background: linear-gradient(135deg, #000000, #1a1a1a, #000000);
+    color: white;
+    padding: 30px
+}
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
